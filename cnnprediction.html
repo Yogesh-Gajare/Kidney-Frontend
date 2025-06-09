@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kidney Cancer Detection - Prediction</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='cnnpredicts.css', _external=True) }}">
+  <link rel="stylesheet" href="css/cnnpredicts.css" />
 </head>
 <body>
   <header>
     <nav>
       <h1>KIDNEY CANCER DETECTION</h1>
       <div class="menu">
-        <a href="{{ url_for('open') }}">Home</a>
-        <a href="{{ url_for('data') }}">Upload Data</a>
-        <a href="{{ url_for('login') }}">Logout</a>
+        <a href="index.html">Home</a>
+        <a href="upload.html">Upload Data</a>
+        <a href="login.html">Logout</a>
       </div>
     </nav>
   </header>
@@ -24,9 +24,8 @@
 
       <!-- Placeholder for the uploaded image -->
       <div class="image-container">
-        <img id="uploadedImage" src="" alt="Uploaded Image" style="max-width: 100%; height: 300px;">
+        <img id="uploadedImage" src="" alt="Uploaded Image" style="max-width: 100%; height: 300px;" />
       </div>
-
 
       <!-- Prediction Button -->
       <button id="predictBtn">Get Prediction</button>
@@ -41,6 +40,6 @@
     </div>
   </main>
 
-  <script src="{{ url_for('static', filename='cnnprediction.js') }}"></script>
+  <script src="js/cnnprediction.js"></script>
 </body>
 </html>
