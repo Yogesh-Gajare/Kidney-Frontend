@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Kidney Cancer Detection - Prediction Result</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css', _external=True) }}">
-
+    <!-- Link to CSS in /css/ folder -->
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
     <!-- Header Section -->
@@ -15,11 +14,11 @@
             <h1>KIDNEY</h1>
             <nav>
                 <ul>
-                    <li><a href="{{ url_for('open') }}">Home</a></li>
-                    <li><a href="{{ url_for('upload') }}">Upload</a></li>
-                    <li><a href="{{ url_for('cnnprediction') }}">Prediction</a></li>
-                    <li><a href="#">Performance_Analysis</a></li>
-                    <li><a href="{{ url_for('login') }}">Logout</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="upload.html">Upload</a></li>
+                    <li><a href="prediction.html">Prediction</a></li>
+                    <li><a href="performance_analysis.html">Performance_Analysis</a></li>
+                    <li><a href="login.html">Logout</a></li>
                 </ul>
             </nav>
         </div>
@@ -44,7 +43,6 @@
                 <li><strong>SERUM CREATININE:</strong> <span id="serumCreatinineDisplay"></span></li>
                 <li><strong>POTASSIUM:</strong> <span id="potassiumDisplay"></span></li>
                 <li><strong>ANAEMIA:</strong> <span id="anaemiaDisplay"></span></li>
-                <!-- <li><strong>HEMOGLOBIN :</strong> <span id="hemoglobinDisplay"></span></li> -->
             </ul>
         </div>
 
@@ -55,8 +53,7 @@
         </div>
     </main>
 
-    <!-- <script src="annpredict.js"></script> -->
-    <script src="{{ url_for('static', filename='annpredict.js') }}"></script>
-
+    <!-- Link to JS file in /js/ folder -->
+    <script src="js/annpredict.js"></script>
 </body>
 </html>
